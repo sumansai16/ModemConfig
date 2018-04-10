@@ -1,0 +1,221 @@
+<!--<mat-tab-group>
+  <mat-tab label="One">
+    <h1>Some tab content</h1>
+    <p>...</p>
+  </mat-tab>
+  <mat-tab label="Two">
+    <h1>Some more tab content</h1>
+    <p>...</p>
+  </mat-tab>
+</mat-tab-group>-->
+
+<div class="container">
+  <div class="row">
+    <!--TAB GROUP -->
+    <mat-tab-group [(selectedIndex)]="selectedTabIndex">
+      <div class="col col-md-4 col-sm-12">
+        <!--Tab1 -->
+        <mat-tab>
+          <!--Tab1 Label-->
+          <ng-template mat-tab-label class="md-dark">
+            <h3> <mat-icon>network_check</mat-icon><span>&nbsp;&nbsp;Network Interfaces</span></h3>
+          </ng-template>
+          <!--Tab1 Content -->
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>
+                Network Interface card
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <!--Accordion -->
+              <mat-accordion>
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    Ethernet 0 Form
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+
+                <!--<mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    This is the expansion 2 title
+                  </mat-expansion-panel-header>
+
+                  This the expansion 2 content
+
+                </mat-expansion-panel>-->
+                <!--</mat-accordion>-->
+                <!--</mat-card-content>
+                </mat-card>-->
+                <!--<mat-card>
+                  <mat-card-header>
+                    <mat-card-title>Ethernet 1 </mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content>-->
+                <!--********-->
+                <!--Accordion -->
+                <!--<mat-accordion>-->
+
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    Ethernet 1 Form
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+                <!--</mat-accordion>-->
+                <!--</mat-card-content>
+                </mat-card>
+
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-title>WIFI 0</mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content>-->
+                <!--Accordion -->
+                <!--<mat-accordion>-->
+
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    WIFI 0 Form
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+
+                <!--</mat-accordion>-->
+                <!--</mat-card-content>
+                </mat-card>
+
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-title>WIFI 1</mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content>-->
+                <!--Accordion -->
+                <!--<mat-accordion>-->
+
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    Wifi 1 Form
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+                <!--</mat-accordion>-->
+                <!--</mat-card-content>
+                  </mat-card>
+
+                <mat-card>
+                  <mat-card-header>
+                    <mat-card-title>WWAN 0</mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content>-->
+                <!--Accordion -->
+                <!--<mat-accordion>-->
+
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    WWAN 0 Form
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+              </mat-accordion>
+            </mat-card-content>
+          </mat-card>
+
+        </mat-tab>
+      </div>
+
+
+      <!-- Software Tab-->
+      <div class="col col-md-4 col-sm-12">
+        <mat-tab>
+          <!--Tab2 Label-->
+          <ng-template mat-tab-label>
+            <h3> <mat-icon class="svg-icon svg svg-baseline">apps</mat-icon><span>&nbsp;&nbsp;Software</span></h3>
+          </ng-template>
+          <!--Tab2 Content -->
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>
+                Software Card
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <!--Accordion -->
+              <mat-accordion>
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    Docker Form
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    SSH Form
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    SYS Log Form
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+              </mat-accordion>
+            </mat-card-content>
+          </mat-card>
+
+        </mat-tab>
+      </div>
+
+
+
+
+      <!-- System Tab -->
+      <div class="col col-md-4 col-sm-12">
+        <mat-tab>
+          <!--Tab3 Label-->
+          <ng-template mat-tab-label>
+            <h3> <mat-icon class="svg-icon svg svg-baseline">settings_system_daydream</mat-icon><span>&nbsp;&nbsp;System</span></h3>
+          </ng-template>
+          <!--Tab3 Content -->
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>
+                System Card
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <!--Accordion -->
+              <mat-accordion>
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    REBOOT FORM
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="false">
+                  <mat-expansion-panel-header>
+                    RESET FORM
+                  </mat-expansion-panel-header>
+
+                  Form content goes here
+                </mat-expansion-panel>
+              </mat-accordion>
+            </mat-card-content>
+          </mat-card>
+
+        </mat-tab>
+      </div>
+    </mat-tab-group>
+  </div>
+</div>
